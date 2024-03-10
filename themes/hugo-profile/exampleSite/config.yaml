@@ -1,0 +1,475 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Hugo Profile"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Menus:
+ # main:
+  #  - identifier: blog
+  #    name: Blog
+  #    title: Blog posts
+  #    url: /blogs
+  #    weight: 1
+  #  - identifier: gallery
+  #    name: Gallery
+  #    title: Blog posts
+   #   url: /gallery
+   #   weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Hugo Profile"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/images/sun.PNG"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+  
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Tim" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Timothee Godard."
+    subtitle: "Game Designer"
+    content: "Passionate about games and technologies. I want to add my contribution in the creation of video games. You can contact me by email : timg.dev.sim@gmail.com "
+    image: /images/spaceme.jpg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: false
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+   #  socialLinks:
+   #    fontAwesomeIcons:
+   #     - icon: fab fa-github
+   #        url: https://example.com
+   #      - icon: fab fa-x-twitter
+    #       url: https://example.com
+   #    customIcons:
+   #      - icon: /fav.png
+   #        url: "https://example.com"
+
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.jpg"
+    content: |-
+     I'm a former engineer specialized in wood structure analyse. I have a background in computer science and mathematics and a strong interest in arts like cinema, music and of course video games. I am currently working on different projects in Loire-Atlantique.
+
+    
+
+
+    skills:
+      enable: true
+      title: "I am self-taught and here are a few technologies I've been working with recently:"
+      items:
+        - "Love2D / LUA"
+        - "Rhino 7 / Grasshopper"
+        - "Unreal 5 / Blueprint"
+        - "Gimp"
+        - "Unity (beginner)"
+        - "Blender (beginner) "
+
+
+
+# projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Space Game For Android 
+        content: 
+        image: /images/space.gif  
+        featured:
+          name: link
+          link: blogs/math
+        badges:
+        
+          - "Love2D"
+          - "LUA"
+ 
+
+      - title: Space Game Artwork
+        content: 
+        image:  /images/planets.PNG
+
+        badges:
+          - "Rhino 7"
+          - "Grasshopper"
+ 
+
+
+
+      - title: Double Pendulum Chaos
+        content: 
+        image:  /images/pend.gif
+
+        badges:
+          - "Rhino 7"
+          - "Grasshopper"
+ 
+
+
+      - title: Collapsing Column Simulation
+        content: 
+        image:  /images/barre.gif
+   
+        badges:
+          - "Rhino 7"
+          - "Grasshopper"
+ 
+
+
+      - title: Wind Charge Structure Simulation
+        content: 
+        image:  /images/struct.gif
+   
+        badges:
+          - "Rhino 7"
+          - "Grasshopper"
+ 
+
+
+
+      - title: Parametric Labyrinth On Sphère
+        content: 
+        image:  /images/laby.PNG
+   
+        badges:
+          - "Rhino 7"
+          - "Grasshopper"
+ 
+
+
+
+      - title: Automatic Hexagonal Generation
+        content: 
+        image:  /images/land1.PNG
+   
+        badges:
+          - "Rhino 7"
+          - "Grasshopper"
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  # Experience
+  experience:
+    enable: true
+    title: "Interests"
+    items:
+
+
+      - job: ""
+        company: "Video Games"
+        companyUrl: ""
+        date: ""
+        featuredLink:
+          enable: false
+          name: ""
+          url: ""
+        content: |
+         I grew up with video games, since my childhood with the Super Nintendo to latest game on computer. I remembered all of this experiences when I was a student and start looking how games are created. From the YouTube channel Pause Process to GDC conferences, i build a strong culture in video game. Here are few of my favorite:
+          - Outer Wilds - The Witness - Superliminal - Manifold Garden - Antichamber
+          - Hollow Knight - Celeste - Hades - Hyper Light Drifter - Broforce - Don't Starve - Noita         
+          - Subnautica - Dishonored - Bioshock - Far Cry 2 (and map editor!)
+          - Baba is You - Opus Magnum - World Of Goo - Bad North
+          - What Remains Of Edith Finch - Road 96
+          - A Short Hike - Untitled Goose Game
+          - Dark Souls 3
+          - Nova Drift
+         
+          
+
+
+      - job: ""
+        company: "Music and Instruments"
+        companyUrl: ""
+        date: ""
+        featuredLink:
+          enable: false
+          name: ""
+          url: ""
+        content: |
+          I listen to music regularly when I do other activities, This is why i love Ambient music like Brian Eno or energizing music like Drum and Bass and Synthwave. I also play multiple instruments and look for expérimentations.
+
+          - I play Trumpet and try some loop
+          - Experimentation on Raspberry pi with Sonic Pi : code for ambient sound
+          - Procedural music with scratch (Not good to listen)
+
+      - job: ""
+        company: "Photography"
+        companyUrl: ""
+        date: ""
+        featuredLink:
+          enable: false
+          name: ""
+          url: ""
+        content: |
+          With my Canon 700D i experiment many thing about photography and video. How to mix speed, light and other parameters fascinate me. Here some examples of experiences:  
+          - Long exposition Astrophotgraphie
+          - Little object Macrophotographie
+          - Light painting 
+          - Fish eye photo
+          - Photo editing of wood texture with gimp
+
+
+
+
+
+
+
+
+
+
+
+
+
+  # Education
+  education:
+    enable: true
+    title: "Experience & Education"
+    index: false
+    items:
+
+      - title: "Global Gam Jam"
+        school:
+          name: "Nantes"
+          url: "https://example.org"
+        date: "2024"
+        # GPA: "3.8 out of 5.0"
+        content: 
+    
+
+
+      - title: "Technology Professor"
+        school:
+          name: "Pornic High School"
+          url: "https://example.org"
+        date: "2022 - 2023"
+        # GPA: "3.8 out of 5.0"
+        content: |
+            - Make video games with students and use block-based programation with software Scratch
+            - Creation of a drawing robot with Arduino
+            - Conception of houses with Sketchup
+            - Analyse of smartphone's technology and utilisation
+            - Study and debate arround Social Networks, Artificial Inteligence, Eco-Conception
+
+
+      - title: "Engineer Research and development"
+        school: 
+          name: "Quaternion Startup Toulouse"
+          url: "https://example.org"
+        date: "2020"
+        # GPA: "3.8 out of 5.0"
+        content: |
+            - Gridshell structure for temporary events
+            - Modular and self-customizable architecture
+            - Team working with Notion
+        
+
+      - title: "Master Engineer Wood Structure"
+        school:
+          name: "ENSTIB Epinal"
+          url: "https://example.org"
+        date: "2015 - 2019"
+        # GPA: "3.8 out of 5.0"
+        content: |
+
+          End-Of-Study project
+          - Procedural structure modelisation and simulation 
+
+          Technologies, computer sciences and software
+
+          - Modelisation with Autodesk Inventor and Cadwork
+          - Simulation and analyse of structure with Accord-Bat
+          - Manufacturing with CNC machine and Robots (Kuka)
+          - programation with Excel and VBA
+
+          Knowledge
+            - Construction and Architecture  
+            - Science of materials
+            - Business and management
+
+
+      - title: "Mathematics and Physics preparatory class"
+        school:
+          name: "Etienne Mimard Saint-Etienne"
+          url: "https://example.org"
+        date: "2013 - 2015"
+        # GPA: "3.8 out of 5.0"
+        content: 
+
+
+
+  #footer:
+
+
+   
+  # socialNetworks:
+     
+  # github: https://github.com
+     
+  # linkedin: https://linkedin.com
+
+      
+  #Contact
+
+
+
+
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content:  |-
+      My phone number is 06 42 81 05 55
+     
+      You can also contact me by email: timg.dev.sim@gmail.com
+
+    email: timg.dev.sim@gmail.com
+    btnName: Mail me
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: false
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
