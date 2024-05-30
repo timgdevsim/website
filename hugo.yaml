@@ -179,7 +179,20 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+
+
   
+      - title: Space Game For Android 
+        content: 
+        image: /images/G2.gif  
+        featured:
+          name: link
+          link: blogs/math
+        badges:
+            - "Love2D"
+            - "LUA"
+            - "Visual Studio Code"
+
 
       - title: Island Escape Game
         content: 
@@ -216,18 +229,6 @@ params:
           - "Grasshopper"
  
 
-
-
-      - title: Space Game For Android 
-        content: 
-        image: /images/G2.gif  
-        featured:
-          name: link
-          link: blogs/math
-        badges:
-            - "Love2D"
-            - "LUA"
-            - "Visual Studio Code"
 
 
       - title: Structure Simulation
