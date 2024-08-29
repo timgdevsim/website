@@ -127,7 +127,7 @@ params:
     intro: "Hi, my name is"
     title: "Timothee Godard."
     subtitle: "Game & Level Designer"
-    content: "Passionate about games and technologies. I want to add my contribution in the creation of video games. You can contact me by email : contact@timotheegodard.fr "
+    content: "Passionate about games and technologies. I want to add my contribution in the creation of video games. You can contact me by email : timothee.godard@gmail.com "
     image: /images/me.jpg
     bottomImage:
       enable: true
@@ -458,7 +458,7 @@ params:
     content:  |-
       My phone number is 06 42 81 05 55
      
-      You can also contact me by email: contact@timotheegodard.fr
+      You can also contact me by email: timothee.godard@gmail.com
       
     email: contact@timotheegodard.fr
     btnName: Mail me
